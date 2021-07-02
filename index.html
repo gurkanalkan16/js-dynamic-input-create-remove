@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+
+    </div>
+  </div>
+  <div class="navbar navbar-dark bg-dark shadow-sm">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center" style="text-align:center;">
+        <strong>Gürkan Alkan  - Javascript-Dynamic Input Create and Remove  </strong>
+      </a>
+
+    </div>
+  </div>
+</header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="switch d-inline m-r-10">
+                        <input type="checkbox" class="switcher-input" name="abroad" value="1" id="edit-abroad">
+                        <label for="edit-abroad" class="cr"></label>
+                    </div>
+                    <label>Yurt Dışı Gönderi</label>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="abroad">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="switch d-inline m-r-10">
+                        <input type="checkbox" class="switcher-input" name="free_shipping" value="0" id="edit-current_language1">
+                        <label for="edit-current_language1" class="cr"></label>
+                    </div>
+                    <label>Ücretsiz Kargo</label>
+                </div>
+            </div>
+            <div class="col-md-6" id="free_shipping" style="display: none;">
+
+                <!-- <label for="inputPassword5" class="form-label">Ücretsiz Kargo Min. Limit</label> -->
+                <div id="passwordHelpBlock" class="form-text">
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row" id="abroad2">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <div class="switch d-inline m-r-10">
+                        <input type="checkbox" class="switcher-input" name="pay_door" value="0" id="edit-current_language2">
+                        <label for="edit-current_language2" class="cr"></label>
+                    </div>
+                    <label>Kapıda Ödeme</label>
+                </div>
+            </div>
+            <div class="col-md-6" id="pay_door" style="display: none;">
+                <!-- <label for="inputPassword5" class="form-label">Kapıda Ödeme Ücreti</label> -->
+                <!-- <input type="text" id="input2" name="paydoor_price" class="form-control" placeholder="Kapıda Ödeme Ücreti" aria-describedby="passwordHelpBlock"> -->
+                <div id="passwordHelpBlock" class="form-text">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="create-remove.js"></script>
+
+</body>
+
+</html>
